@@ -151,6 +151,101 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-npm 创建vue项目" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/30/npm%20%E5%88%9B%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/">npm 创建vue项目</a>
+    </h1>
+  
+
+        
+        <a href="/2020/01/30/npm%20%E5%88%9B%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/" class="archive-article-date">
+  	<time datetime="2020-01-30T08:39:06.367Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="创建vue3-项目的步骤"><a href="#创建vue3-项目的步骤" class="headerlink" title="创建vue3 项目的步骤"></a>创建vue3 项目的步骤</h2><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>安装全局的vue 脚手架（电脑安装一次就行了）</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install -g @vue/cli</span></pre></td></tr></table></figure>
+
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>检查vue脚手架的 版本</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">vue -V (!必须是大写的V)</span></pre></td></tr></table></figure>
+
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>创建新文件夹 ，进入文件夹执行命令</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function">vue create <span class="title">myVue</span>  <span class="params">(!项目名称)</span></span></span></pre></td></tr></table></figure>
+
+<h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>进行项目的初始化，选择安装插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">出现界面的选择， 选择手动设置</span></pre></td></tr></table></figure>
+
+<h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><p>1) .  选择配置的内容（关键的一步）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">选择第一个 Babel</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">选择第第四个 Router（路由）</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">Linter/Formattor 可以选， 初学不建议选， 最后可以在项目中进行组件追加的方式</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">其他的组件有进行单元测试用的 可以进行添加配置</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">npm install 命令 就是进行组件的下载用</span></pre></td></tr></table></figure>
+
+<p>2) . 选择别的一些设置</p>
+<pre><code>1. 是否使用历史的设置 -----选择 y
+ 2. 其他的....  选择 y 
+ 3. 选择 json
+ 4.  全部默认直到结束 </code></pre><h3 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h3><p>启动安装好的vue项目</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm run server</span></pre></td></tr></table></figure>
+
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><p>安装淘宝镜像</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm  install  -g  cnpm  --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span></pre></td></tr></table></figure>
+
+
+
+<h2 id="启动一个项目"><a href="#启动一个项目" class="headerlink" title="启动一个项目"></a>启动一个项目</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install</span></pre></td></tr></table></figure>
+<h3 id="Compiles-and-hot-reloads-for-development"><a href="#Compiles-and-hot-reloads-for-development" class="headerlink" title="Compiles and hot-reloads for development"></a>Compiles and hot-reloads for development</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm run serve</span></pre></td></tr></table></figure>
+
+<h3 id="Compiles-and-minifies-for-production"><a href="#Compiles-and-minifies-for-production" class="headerlink" title="Compiles and minifies for production"></a>Compiles and minifies for production</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm run build</span></pre></td></tr></table></figure>
+
+<h3 id="Customize-configuration"><a href="#Customize-configuration" class="headerlink" title="Customize configuration"></a>Customize configuration</h3><p>See <a href="https://cli.vuejs.org/config/" target="_blank" rel="noopener">Configuration Reference</a>.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/01/30/npm%20%E5%88%9B%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-将文件上传到hexo 博客上" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
