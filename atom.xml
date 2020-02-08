@@ -60,9 +60,9 @@
     
     
     
-      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
-    
       <category term="springcloud" scheme="http://yoursite.com/tags/springcloud/"/>
+    
+      <category term="springboot" scheme="http://yoursite.com/tags/springboot/"/>
     
   </entry>
   
