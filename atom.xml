@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-13T09:08:17.740Z</updated>
+  <updated>2020-03-08T02:55:16.735Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker基础命令</title>
+    <link href="http://yoursite.com/2020/03/08/docker%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2020/03/08/docker%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</id>
+    <published>2020-03-08T02:49:50.000Z</published>
+    <updated>2020-03-08T02:55:16.735Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Docker命令终结-vim命令"><a href="#Docker命令终结-vim命令" class="headerlink" title="Docker命令终结 vim命令"></a>Docker命令终结 vim命令</h1><h2 id="1-docker查看报错信息"><a href="#1-docker查看报错信息" class="headerlink" title="1. docker查看报错信息"></a>1. docker查看报错信息</h2><figure class="highlight docker"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ docker logs --since <span class="number">30</span>m 容器id(名字)</span></pre></td></tr></table></figure><h2 id="2-宿主机-启动Docker"><a href="#2-宿主机-启动Docker" class="headerlink" title="2. 宿主机 启动Docker"></a>2. 宿主机 启动Docker</h2><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">sysyemctl start docker </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">sysyemctl restart docker</span></pre></td></tr></table></figure><h2 id="3-docker-启动容器"><a href="#3-docker-启动容器" class="headerlink" title="3. docker 启动容器"></a>3. docker 启动容器</h2><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">docker start 容器id(名字)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">docker restart 容器id(名字)</span></pre></td></tr></table></figure><h2 id="4-docker-创建容器"><a href="#4-docker-创建容器" class="headerlink" title="4. docker 创建容器"></a>4. docker 创建容器</h2><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">docker <span class="keyword">run</span><span class="bash"> -di --name=名字 -p 9000:9000 镜像名字：版本号 (不写代表是last最新版本)</span></span></pre></td></tr></table></figure><h2 id="5-vi-文件名字打开-文件"><a href="#5-vi-文件名字打开-文件" class="headerlink" title="5. vi + 文件名字打开 文件"></a>5. vi + 文件名字打开 文件</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">vi</span> 文件名</span></pre></td></tr></table></figure><h2 id="6-进入vim中-i键表示开始插入"><a href="#6-进入vim中-i键表示开始插入" class="headerlink" title="6 .  进入vim中 i键表示开始插入"></a>6 .  进入vim中 i键表示开始插入</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">i</span></pre></td></tr></table></figure><h2 id="7-shift-z-z-表示退出-保存"><a href="#7-shift-z-z-表示退出-保存" class="headerlink" title="7. shift +z +z 表示退出 + 保存"></a>7. shift +z +z 表示退出 + 保存</h2><p>shift +z +z  {vim}</p><h2 id="8-docker进入docker-容器虚拟机中"><a href="#8-docker进入docker-容器虚拟机中" class="headerlink" title="8. docker进入docker 容器虚拟机中"></a>8. docker进入docker 容器虚拟机中</h2><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">docker exec -it 容器名(id) /bin/bash</span></pre></td></tr></table></figure><h2 id="9-在docker中挂载外部文件"><a href="#9-在docker中挂载外部文件" class="headerlink" title="9. 在docker中挂载外部文件"></a>9. 在docker中挂载外部文件</h2><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">docker cp 文件 容器名:/path/path/path</span></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Docker命令终结-vim命令&quot;&gt;&lt;a href=&quot;#Docker命令终结-vim命令&quot; class=&quot;headerlink&quot; title=&quot;Docker命令终结 vim命令&quot;&gt;&lt;/a&gt;Docker命令终结 vim命令&lt;/h1&gt;&lt;h2 id=&quot;1-docker查
+      
+    
+    </summary>
+    
+    
+    
+      <category term="docker" scheme="http://yoursite.com/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringBoot 整合安全框架Spring Security 快速如门</title>
